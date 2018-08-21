@@ -40,6 +40,8 @@ export default class SearchPage extends Component<Props> {
                         title='Go'
                     />
                 </View>
+
+                <Image source={require('./Resources/house.png')} style={styles.image}/>
             </View>
         );
     }
@@ -72,5 +74,9 @@ const styles = StyleSheet.create({
         borderColor: '#48BBEC',
         borderRadius: 8,
         color: '#48BBEC',
+    },
+    image: {
+        width: 217,
+        height: 138,
     },
 });
