@@ -9,7 +9,10 @@ import {
     Button,
     ActivityIndicator,
     Image,
+    YellowBox,
 } from 'react-native';
+
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
 
 function urlForQueryAndPage(key, value, pageNumber) {
     const data = {
